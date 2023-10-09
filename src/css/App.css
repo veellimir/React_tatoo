@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  
+}
+html {background: #050402;}
+.wrapper-products {
+  position: relative;
+  width: 70%;
+  left: 50%;
+  transform: translate(-50%);
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

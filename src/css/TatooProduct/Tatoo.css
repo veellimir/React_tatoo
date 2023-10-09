@@ -1,0 +1,21 @@
+.tatoo {
+    position: relative;
+    width: 289px;
+    height: 384px;
+    background-color: rgb(59, 61, 60);
+    margin-bottom: 50px;
+    transition: all 1s ease;
+}
+.tatoo:hover {
+    background: gray;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.tatoo h2 {
+    color: #FAF6F2;
+    font-family: 'Jost';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
