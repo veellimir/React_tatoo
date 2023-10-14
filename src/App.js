@@ -10,13 +10,13 @@ function App() {
       <Header />
       <Categories />
       <Main />
-      <div className='wrapper-products'>
-        <Tatoo title='Орёл' price={5000}/>
-        <Tatoo title='Надписи' price={3000}/>
-        <Tatoo title='Кийтайский дракон' price={15000}/>
-        <Tatoo title='Волк' price={7000}/>
-        <Tatoo title='Парные' price={6300}/>
-      </div>
+        <div className='wrapper-products'>
+          <Tatoo title='Орёл' price={5000}/>
+          <Tatoo title='Надписи' price={3000}/>
+          <Tatoo title='Кийтайский дракон' price={15000}/>
+          <Tatoo title='Волк' price={7000}/>
+          <Tatoo title='Парные' price={6300}/>
+        </div>
     </div>
   );
 }

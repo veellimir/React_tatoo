@@ -1,10 +1,18 @@
+/* All Transition */
+.tatoo,
+.wrapper_btn_quantity button,
+#add_backet {transition: all 1s ease;}
+
+/* All Cursor */
+#add_backet,
+.wrapper_btn_quantity button {cursor: pointer;}
+
 .tatoo {
     position: relative;
     width: 289px;
     height: 384px;
-    background-color: rgb(59, 61, 60);
+    background: rgb(59, 61, 60);
     margin-bottom: 50px;
-    transition: all 1s ease;
 }
 .tatoo:hover {
     background: gray;
@@ -17,5 +25,36 @@
     font-size: 17px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%; 
+    line-height: 140%;
 }
+.wrapper-btn-basket {
+    width: 259px;
+    height: 50px;
+    background: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: 20px;
+}
+#add_backet {
+    color: #BB8C5F;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80%;
+}
+#add_backet:hover{color: #000;}
+.wrapper_btn_quantity {display: flex; padding: 10px;}
+.wrapper_btn_quantity button {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid  #BB8C5F;
+    background: #EEE;
+    font-size: 20px;
+}
+.wrapper_btn_quantity button:hover {background: #BB8C5F;}
+.counter_items {align-self: center; padding: 10px;}
