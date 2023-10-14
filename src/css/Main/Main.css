@@ -60,3 +60,36 @@ main {background: #030201;height: 87vh;}
     font-size: 20px;
     line-height: 150%; /* 30px */
 }
+@media (max-width: 1430px) {
+    .wrapper-title h1 {font-size: 51px;}
+    .wrapper-title {left: 18%;}
+}
+@media (max-width: 1170px) {
+    main {height: 69vh;}
+    .main-img {width: 400px;height: 500px}
+    .main-littleOne {
+        height: 237px; 
+        width: 328px; 
+        top: 328px;
+        right: 220px
+    }
+    .main-littleTwo {width: 208px; top: 161px;}
+    .wrapper-title h1 {font-size: 31px;}
+    .wrapper-title {left: 27%;}
+}
+@media (max-width: 1090px) {
+    .wrapper-title {position: absolute; top: 24vh;}
+    .main-img {float: none; width: 100%; background-position: center;}
+    .main-littleOne {right: 95px; top: 288px;}
+    .main-littleTwo {right: 0;}
+}
+@media (max-width: 1024px) {
+    .main-littleOne,.main-littleTwo {display: none;}
+    .wrapper-title {
+        top: 11vh;
+        left: 50%;
+        transform: translate(-50%);
+        width: 455px;
+        text-align: center;
+    }
+}
