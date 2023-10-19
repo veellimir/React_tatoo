@@ -1,20 +1,33 @@
 import '../../css/Header/Header.css';
+import React from 'react';
+
 function Categories() {
+    const [activeCategory, SetActiveCategory] = React.useState(0)
+
+    const categories = [
+        'Все',
+        'На руки',
+        'Спина',
+        'Голова',
+        'Ноги',
+        'Шея',
+    ]
+    const onClickCategory = (index) => {
+        SetActiveCategory(index)
+    }
     return (
         <div>
-            <div className='wrapper-header' id="header-two">
+            <nav className='wrapper-header' id="header-two">
                 <div className="wrapper-menu">
                     <h1>Каталог</h1>
                     <div className="menu-burger"></div>
                 </div>
                 <div className="wrapper-navigation">
-                    <span>На руки</span>
-                    <span>Спина</span>
-                    <span>Голова</span>
-                    <span>Ноги</span>
-                    <span>Шея</span>
+                    {categories.map((value, i) => (
+                        <span onClick={() => onClickCategory(i)} className={activeCategory === i ? 'activeCategory' : ''}>{value}</span>
+                    ))}
                 </div>
-            </div>
+            </nav>
         </div>
     );
 }
