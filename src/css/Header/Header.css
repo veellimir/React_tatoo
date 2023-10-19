@@ -33,12 +33,16 @@
 h1 {font-size: 25px;line-height: 140%;}
 span {font-size: 17px;line-height: 150%;}
 .wrapper-menu {margin-left: 108px;}
-.wrapper-navigation span {padding-right: 50px;}
+.wrapper-navigation span {padding: 30px;}
 .wrapper-icon {width: 100px; justify-content: space-between;} 
 .icon-backet,.icon-user,.menu-burger {width: 28px;height: 28px;}
 .icon-backet {background-image: url(../../img/iconbacket.png);}
 .icon-user {background-image: url(../../img/iconuser.png);}
 .menu-burger {background-image: url(../../img/burgermenu.png); margin: 5px;}
+.activeCategory {
+    background: rgba(161, 200, 234, 0.249);
+    border-radius: 6px;
+}
 
 @media (min-width: 3000px) {
     .wrapper-header {margin-left: 50%; transform: translate(-50%);}}
