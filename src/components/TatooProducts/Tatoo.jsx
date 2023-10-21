@@ -1,14 +1,14 @@
 import '../../css/TatooProduct/Tatoo.css'
 import React from 'react';
 
-function Tatoo({ title, price, image }) {
+function Tatoo({ title, price, imageUrl }) {
     const [tatooCount, setTatooCount] = React.useState(0)
     const addBasket = () => {
         setTatooCount(tatooCount + 1)
     }
     return (
         <div className='tatoo'>
-            <img className='img_tatoo' src={image} alt="Изобр. пока отсутствуют" />
+            <img className='img_tatoo' src={imageUrl} alt="Изобр. пока отсутствуют" />
             <div className='wrapper-descript_tattoo'>
                 <h2>{title}</h2>
                 <h2>От {price} ₽</h2>
