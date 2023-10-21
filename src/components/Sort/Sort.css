@@ -1,0 +1,24 @@
+/* All flex */
+
+.wrapper_select,
+.sorted {display: flex;}
+
+.wrapper-sorted {
+    position: relative;
+    width: 220px;
+    height: 30px;
+    margin-top: 5px;
+}
+.sorted {justify-content: space-evenly;align-items: center;}
+.sorted span {color: rgba(161, 200, 234, 0.249); font-size: 20px;}
+.wrapper_select span:hover {color: black;transition: all 1s ease;}
+.wrapper_select {
+    position: absolute;
+    right: -30px;
+    flex-direction: column;
+    padding: 10px;
+    background: #BB8C5F;
+    z-index: 1;
+}
+.active_select {font-weight: bold; font-size: 18px; color: rgba(23, 35, 45, 0.874);}
+.wrapper_select span {cursor: pointer;}

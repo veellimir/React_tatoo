@@ -15,7 +15,7 @@ function App() {
         {
           tatooitems.map(obj => 
           // <Tatoo title={obj.title} price={obj.price} image={obj.imageUrl} />
-          <Tatoo {...obj} /> // similarly
+          <Tatoo {...obj}/> // similarly
           )
         }
       </div>

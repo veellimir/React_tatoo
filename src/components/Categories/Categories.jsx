@@ -1,5 +1,6 @@
 import '../../css/Header/Header.css';
 import React from 'react';
+import Sort from '../../components/Sort/Sort';
 
 function Categories() {
     const [activeCategory, SetActiveCategory] = React.useState(0)
@@ -16,15 +17,16 @@ function Categories() {
         SetActiveCategory(index)
     }
     return (
-        <div>
-            <nav className='wrapper-header' id="header-two">
+        <div >
+            <nav className='wrapper-header' id="header-two" >
                 <div className="wrapper-menu">
                     <h1>Каталог</h1>
                     <div className="menu-burger"></div>
+                    <Sort />
                 </div>
-                <div className="wrapper-navigation">
+                <div className="wrapper-navigation" >
                     {categories.map((value, i) => (
-                        <span onClick={() => onClickCategory(i)} className={activeCategory === i ? 'activeCategory' : ''}>{value}</span>
+                        <span key={i} onClick={() => onClickCategory(i)} className={activeCategory === i ? 'activeCategory' : ''}>{value}</span>
                     ))}
                 </div>
             </nav>
