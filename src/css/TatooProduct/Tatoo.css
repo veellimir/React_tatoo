@@ -23,15 +23,16 @@
 .wrapper-descript_tattoo {position: absolute; top: 0;}
 .img_tatoo {
     position: relative;
-    width: 289px;
-    height: auto;
+    width: 290px;
+    height: 383px;
+    object-fit: fill;
 }
 .tatoo h2 {
-    color: #FAF6F2;
+    color: black;
     font-family: 'Jost';
     font-size: 17px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 140%;
 }
 .wrapper-btn-basket {
