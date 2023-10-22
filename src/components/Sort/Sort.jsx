@@ -3,7 +3,7 @@ import '../Sort/Sort.css'
 
 function Sort() {
     const [openModal, setIsVisible] = React.useState(false);
-    const [selected, setSelected] = React.useState(false);
+    const [selected, setSelected] = React.useState(0);
     const listSort = ['цене', 'цвету', 'размеру']
 
     const onClickSelect = (i) => {
@@ -15,7 +15,7 @@ function Sort() {
             <div className='wrapper-sorted'>
                 <div className='sorted'>
                     <b>Сортировка по :</b>
-                    <span onClick={() => setIsVisible( !openModal )}>{listSort[selected]}</span>
+                    <span onClick={() => setIsVisible(!openModal)}>{listSort[selected]}</span>
                 </div>
                 {openModal && (
                     <div className='wrapper_select'>
