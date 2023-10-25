@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom';
+
 import '../../css/Header/Header.css';
+
 function Header() {
     return (
         <div>
@@ -9,7 +12,9 @@ function Header() {
                 </div>
                 <div className="header-logo"></div>
                 <div className="wrapper-icon">
-                    <div className="icon-backet"></div>
+                    <Link to="/backet">
+                        <div className="icon-backet"></div>
+                    </Link>
                     <div className="icon-user"></div>
                 </div>
             </div>
