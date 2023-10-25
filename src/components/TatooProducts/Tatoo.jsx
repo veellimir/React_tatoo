@@ -1,5 +1,9 @@
-import '../../css/TatooProduct/Tatoo.css'
 import React from 'react';
+
+import '../../css/TatooProduct/Tatoo.css'
+
+
+
 
 function Tatoo({ title, price, imageUrl }) {
     const [tatooCount, setTatooCount] = React.useState(0)

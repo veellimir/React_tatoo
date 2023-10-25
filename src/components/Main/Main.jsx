@@ -1,4 +1,8 @@
 import '../../css/Main/Main.css';
+
+import Categories from '../Categories/Categories';
+
+
 function Main() {
     return (
         <div>
@@ -12,6 +16,7 @@ function Main() {
                     <button class="btn_catalog">Смотреть каталог</button>
                 </div>
             </main>
+            <Categories />
         </div>
     );
 }
