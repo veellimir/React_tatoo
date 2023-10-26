@@ -3,26 +3,36 @@ import React from 'react'
 import Tatoo from '../components/TatooProducts/Tatoo';
 import Skeleton from '../components/TatooProducts/Skelton';
 import Main from '../components/Main/Main';
+import Categories from '../components/Categories/Categories';
+import Sort from '../components/Sort/Sort';
 
 
 const Home = () => {
   const [items, setItems] = React.useState([]);
-  const [isLoading, setLoading] = React.useState(true)
+  const [isLoading, setLoading] = React.useState(true);
+  const [categoryId, setCategoryId] = React.useState(0);
+  const [sortType, setSortType] = React.useState({
+    name: 'цене',
+    sortProperty: 'rating',
+  });
 
   React.useEffect(() => {
-    fetch('https://6533f3f2e1b6f4c590466b27.mockapi.io/tatto-items').then((response) => {
-      return response.json()
-    })
-      .then((array) => {
+    setLoading(true)
+    fetch(`https://6533f3f2e1b6f4c590466b27.mockapi.io/tatto-items?${categoryId > 0 ? `category=${categoryId}` : ''
+    }&sortBy=${sortType.sortProperty}&order=desc`,
+    )
+    .then((res) => res.json()) 
+    .then((array) => {
         setItems(array)
         setLoading(false)
       });
-      window.scrollTo(0, 0)
-  }, [])
+  }, [categoryId, sortType])
 
   return (
     <div>
       <Main />
+      <Sort value={sortType} onClickSort={(i) => setSortType(i)}/>
+      <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)}/>
       <div className='wrapper-main'>
         <div className='wrapper-products'>
           {/* {
