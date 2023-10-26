@@ -7,13 +7,25 @@
 #add_backet,
 .wrapper_btn_quantity button {cursor: pointer;}
 
+.wrapper-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.wrapper-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
 .tatoo {
-    margin-top: 50px;
     position: relative;
+    top: 50px;
     width: 289px;
     height: 384px;
     background: rgb(59, 61, 60);
-    margin-bottom: 50px;
 }
 .tatoo:hover {
     background: gray;
@@ -66,3 +78,15 @@
 }
 .wrapper_btn_quantity button:hover {background: #BB8C5F;}
 .counter_items {align-self: center; padding: 10px;}
+
+@media (max-width: 1775px)  {
+    .wrapper-products {grid-template-columns: repeat(3, 1fr);}
+}
+
+@media (max-width: 1024px)  {
+    .wrapper-products {grid-template-columns: repeat(2, 1fr);}
+}
+@media (max-width: 700px)  {
+    .wrapper-products {grid-template-columns: repeat(1, 1fr);}
+    .wrapper-navigation {flex-direction: column;}
+}

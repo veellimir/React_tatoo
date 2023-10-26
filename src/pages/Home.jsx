@@ -17,20 +17,23 @@ const Home = () => {
         setItems(array)
         setLoading(false)
       });
+      window.scrollTo(0, 0)
   }, [])
 
   return (
     <div>
       <Main />
-      <div className='wrapper-products'>
-        {/* {
+      <div className='wrapper-main'>
+        <div className='wrapper-products'>
+          {/* {
           items.map((obj) => (isLoading ? <Skeleton/> :
             // <Tatoo title={obj.title} price={obj.price} image={obj.imageUrl} />
             <Tatoo {...obj} /> // similarly
           ))} */}
-        {
-          isLoading ? [...new Array(6)].map((_, index) => <Skeleton key={index} />) : items.map((obj) => <Tatoo key={obj.id} {...obj} />)
-        }
+          {
+            isLoading ? [...new Array(6)].map((_, index) => <Skeleton key={index} />) : items.map((obj) => <Tatoo key={obj.id} {...obj} />)
+          }
+        </div>
       </div>
     </div>
   )

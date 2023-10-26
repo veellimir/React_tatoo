@@ -8,14 +8,5 @@
   background-repeat: no-repeat;
 }
 html {background: #050402;}
-.wrapper-products {
-  position: relative;
-  width: 70%;
-  left: 50%;
-  transform: translate(-50%);
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+
 b {color: #fff;}

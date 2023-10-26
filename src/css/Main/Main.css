@@ -65,7 +65,7 @@ main {background: #030201;height: 87vh;}
     .wrapper-title {left: 18%;}
 }
 @media (max-width: 1170px) {
-    main {height: 69vh;}
+    main {height: 600px;}
     .main-img {width: 400px;height: 500px}
     .main-littleOne {
         height: 237px; 
