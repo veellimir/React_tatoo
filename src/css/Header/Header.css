@@ -45,13 +45,17 @@ span {font-size: 17px;line-height: 150%;}
 }
 
 @media (min-width: 3000px) {
-    .wrapper-header {margin-left: 50%; transform: translate(-50%);}}
+    .wrapper-header {margin-left: 50%; transform: translate(-50%);}
+}
 @media (max-width: 1320px) {
     .wrapper-contacts {display: block; margin-left: -50px;}
     .email {margin-left: 0;}
     .wrapper-menu {margin-left: 0;}
 }
 @media (max-width: 1024px) {
-    #header-two {display: none;}
+    #header-two {flex-direction: column;}
     .modile {display: block; position: absolute; right: 50px;}
+}
+@media (max-width: 700px)  {
+    #header-two {margin-top: 170px;}
 }
