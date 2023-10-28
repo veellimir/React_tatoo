@@ -1,9 +1,11 @@
-import '../../css/Header/Header.css';
 import React from 'react';
 
+import Search from '../Search';
 
-function Categories({ value, onClickCategory }) {
-    // const [activeCategory, SetActiveCategory] = React.useState(0)
+import '../../css/Header/Header.css';
+
+
+function Categories({ value, onClickCategory, searchValue, setSearchValue }) {
 
     const categories = [
         'Все',
@@ -13,15 +15,13 @@ function Categories({ value, onClickCategory }) {
         'Ноги',
         'Шея',
     ]
-    // const onClickCategory = (index) => {
-    //     SetActiveCategory(index)
-    // }
     return (
         <div >
             <nav className='wrapper-header' id="header-two" >
                 <div className="wrapper-menu">
                     <h1>Каталог</h1>
                     <div className="menu-burger"></div>
+                <Search searchValue={searchValue} setSearchValue={setSearchValue}/>
                 </div>
                 <div className="wrapper-navigation" >
                     {categories.map((categoryName, i) => (
