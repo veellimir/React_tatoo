@@ -1,0 +1,30 @@
+.wrapper-root {position: relative;}
+input {
+    width: 218px;
+    height: 44px;
+    border: 1px solid var(--Dark-Orange, #524336);
+    background: var(--Black, #050402);
+    padding: 20px 40px;
+    transition: all 0.15s ease-in-out;
+    color: #fff;
+    font-size: 17px;
+}
+/* input:focus {width: 300px;} */
+
+.icon_search,
+.icon_close {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 8px;
+    opacity: 0.5;
+}
+
+.icon_search {
+    width: 28px;
+    height: 28px;
+    background-color: aliceblue;
+    left: 10px;
+}
+.icon_close { filter: invert(1); right: 10px;}
+.icon_close:hover {opacity: 1; cursor: pointer;}

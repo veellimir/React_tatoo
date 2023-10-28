@@ -12,3 +12,4 @@
     use-effect;
     react-skeleton;
     react-router;
+    pagination-component;
