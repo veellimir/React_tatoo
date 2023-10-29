@@ -1,4 +1,5 @@
 import React from 'react'
+
 import '../Sort/Sort.css'
 
 function Sort({ value, onClickSort }) {

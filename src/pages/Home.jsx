@@ -6,9 +6,11 @@ import Main from '../components/Main/Main';
 import Categories from '../components/Categories/Categories';
 import Sort from '../components/Sort/Sort';
 import Pagination from '../components/Pagination';
+import { SearchContext } from '../App';
 
 
-const Home = ({ searchValue, setSearchValue }) => {
+const Home = () => {
+  const { searchValue } = React.useContext(SearchContext)
   const [items, setItems] = React.useState([]);
   const [isLoading, setLoading] = React.useState(true);
   const [categoryId, setCategoryId] = React.useState(0);
@@ -37,7 +39,7 @@ const Home = ({ searchValue, setSearchValue }) => {
     <div>
       <Main />
       <Sort value={sortType} onClickSort={(i) => setSortType(i)}/>
-      <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)} searchValue={searchValue} setSearchValue={setSearchValue}/>
+      <Categories value={categoryId} onClickCategory={(id) => setCategoryId(id)}/>
       <div className='wrapper-main'>
         <div className='wrapper-products'>
           {
