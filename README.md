@@ -13,3 +13,4 @@
     react-skeleton;
     react-router;
     pagination-component;
+    use-сontext;

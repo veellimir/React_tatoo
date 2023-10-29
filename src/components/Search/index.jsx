@@ -1,7 +1,13 @@
 import React from 'react'
-import styles from './Search.css'
 
-const Search = ({ searchValue, setSearchValue }) => {
+import { SearchContext } from '../../App';
+
+import './Search.css'
+
+
+
+const Search = () => {
+    const { searchValue, setSearchValue } = React.useContext(SearchContext)
     return (
         <div className='wrapper-root'>
             <input placeholder='Поиск ...' value={searchValue} onChange={(event) => setSearchValue(event.target.value)}/>
