@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
 
 import '../../css/Header/Header.css';
+import styles from './styles.scss'
 
 function Header() {
     return (
         <div>
             <div className='wrapper-header'>
                 <div className="wrapper-contacts">
-                    <div><p id="lower_textHeader">+7 927 2** 57 **</p></div>
+                    <div className={styles.w}><p id="lower_textHeader">+7 927 2** 57 **</p></div>
                     <div><p className="email" id="lower_textHeader">kkaza**@gmail.com</p></div>
                 </div>
                 <div className="header-logo"></div>
